@@ -63,12 +63,6 @@ angular.module('sparkle.services',[])
         }
        
     ];
-    /*for(var i = 0; i < 100; i++) 
-    {
-        images.push({id: i, src: "http://placehold.it/50x50"});
-    }
-    
-    */
     
     return {
     all: function() {
