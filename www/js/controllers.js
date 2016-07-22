@@ -13,12 +13,13 @@ angular.module('sparkle.controllers',[])
 	/*
         Maintaining Preview Views Histories
     */
+    
     $ionicHistory.nextViewOptions({
         historyRoot: true,
         disableAnimate: true,
          expire: 300
     });
-    
+
     
   
     /*
@@ -85,6 +86,8 @@ angular.module('sparkle.controllers',[])
 
 .controller('HomeCtrl',['$scope','$location', '$anchorScroll','$timeout','$http','EventService','$ionicLoading','$state','$ionicHistory','$ionicPopup',function($scope,$location, $anchorScroll,$timeout,$http,EventService,$ionicLoading,$state,$ionicHistory,$ionicPopup){
  
+     
+
     /*
         Move to requestEvent State On CLick of Compose Icon
     */
@@ -124,8 +127,10 @@ angular.module('sparkle.controllers',[])
 
 }])
 
-.controller('AboutCtrl',['$scope','$state',function($scope,$state){
+.controller('AboutCtrl',['$scope','$state','$ionicHistory',function($scope,$state,$ionicHistory){
     
+      
+
     $scope.requestEvent = function(){
         $state.go('app.requestEvent');
         console.log('Event Form');
@@ -158,6 +163,7 @@ angular.module('sparkle.controllers',[])
 
 .controller('EventCtrl',['$scope','$location', '$anchorScroll','$timeout','$ionicModal','$ionicPlatform','$ionicHistory','$http','$stateParams','EventVideoService','EventImageService','$ionicLoading','$state','$ionicPopup',function($scope,$location, $anchorScroll,$timeout,$ionicModal,$ionicPlatform,$ionicHistory,$http,$stateParams,EventVideoService,EventImageService,$ionicLoading,$state,$ionicPopup){
 
+     
     /*
         Move to requestEvent State On CLick of Compose Icon
     */
@@ -293,8 +299,11 @@ angular.module('sparkle.controllers',[])
 
 }])
 
-.controller('FeedbackCtrl', ['$scope','$state','$ionicLoading','$ionicPopup','$http',function($scope,$state,$ionicLoading,$ionicPopup,$http) {
+.controller('FeedbackCtrl', ['$scope','$state','$ionicLoading','$ionicPopup','$http','$ionicHistory',function($scope,$state,$ionicLoading,$ionicPopup,$http,$ionicHistory) {
     
+      
+
+
     $scope.ShowError = false;
     
    
@@ -375,8 +384,10 @@ angular.module('sparkle.controllers',[])
     
 }])
 
-.controller('RequestEventCtrl', ['$scope','$ionicLoading','$ionicPopup','$state','EventService',function($scope,$ionicLoading,$ionicPopup,$state,EventService) {
+.controller('RequestEventCtrl', ['$scope','$ionicLoading','$ionicPopup','$state','EventService','$ionicHistory',function($scope,$ionicLoading,$ionicPopup,$state,EventService,$ionicHistory) {
     
+ 
+
     $scope.ShowError = false;
     console.log('Request Event called');
     
@@ -475,7 +486,9 @@ angular.module('sparkle.controllers',[])
     
 }])
 
-.controller('ServicesCtrl', ['$scope','$ionicLoading','$ionicPopup','$state','OfferService',function($scope,$ionicLoading,$ionicPopup,$state,OfferService) {
+.controller('ServicesCtrl', ['$scope','$ionicLoading','$ionicPopup','$state','OfferService','$ionicHistory',function($scope,$ionicLoading,$ionicPopup,$state,OfferService,$ionicHistory) {
+
+     
 
     $scope.ShowError = false;
     console.log('Request Service called');
@@ -575,7 +588,8 @@ angular.module('sparkle.controllers',[])
 }])
 
 
-.controller('ChatCtrl',['$state','$http',function($state,$http){
+.controller('ChatCtrl',['$scope','$state','$http','$ionicHistory',function($scope,$state,$http,$ionicHistory){
+
 
 
     $scope.requestEvent = function(){
