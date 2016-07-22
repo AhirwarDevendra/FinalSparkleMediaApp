@@ -115,7 +115,7 @@ angular.module('sparkle.controllers',[])
         $ionicLoading.hide();
         $ionicPopup.alert({
                       title: 'Sorry',
-                      content: 'No Internet Connection'
+                      content: 'Bad Request Try Again Latern'
                     }).then(function(res) {
                       ionic.Platform.exitApp();
                     });
@@ -124,8 +124,12 @@ angular.module('sparkle.controllers',[])
 
 }])
 
-.controller('AboutCtrl',['$scope',function($scope){
+.controller('AboutCtrl',['$scope','$state',function($scope,$state){
     
+    $scope.requestEvent = function(){
+        $state.go('app.requestEvent');
+        console.log('Event Form');
+    };
 
     $scope.aboutdata = [
         {
@@ -197,7 +201,7 @@ angular.module('sparkle.controllers',[])
         $ionicLoading.hide();
         $ionicPopup.alert({
                       title: 'Sorry',
-                      content: 'No Internet Connection'
+                      content: 'Bad Request Try Again Latern'
                     }).then(function(res) {
                       ionic.Platform.exitApp();
                     });
@@ -395,7 +399,7 @@ angular.module('sparkle.controllers',[])
         $ionicLoading.hide();
         $ionicPopup.alert({
                       title: 'Sorry',
-                      content: 'No Internet Connection'
+                      content: 'Bad Request Try Again Latern'
                     }).then(function(res) {
                       ionic.Platform.exitApp();
                     });
@@ -495,7 +499,7 @@ angular.module('sparkle.controllers',[])
         $ionicLoading.hide();
         $ionicPopup.alert({
                       title: 'Sorry',
-                      content: 'No Internet Connection'
+                      content: 'Bad Request Try Again Latern'
                     }).then(function(res) {
                       ionic.Platform.exitApp();
                     });
@@ -573,6 +577,12 @@ angular.module('sparkle.controllers',[])
 
 .controller('ChatCtrl',['$state','$http',function($state,$http){
 
+
+    $scope.requestEvent = function(){
+        $state.go('app.requestEvent');
+        
+    };
+    
     console.log("Chat Called");
     
 }])

@@ -19,7 +19,7 @@ angular.module('sparkle.services',[])
       return {
         all: function($EventID) {
           // Return promise (async callback)
-          return $http.get("http://dreamwood.in/SparkleMedia/getDataFromServer.php?getType=GetVideos&eventID="+$EventID);
+          return $http.get("http://podargroup.com/SparkleMedia/getDataFromServer.php?getType=GetVideos&eventID="+$EventID);
             
         }
         

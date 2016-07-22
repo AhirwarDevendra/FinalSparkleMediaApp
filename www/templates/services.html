@@ -1,5 +1,6 @@
 <ion-view view-title="Ask For a service">
   <ion-nav-buttons side="right">
+    <button class="button button-icon icon ion-ios-compose" ng-click="requestEvent()"></button>
     <button menu-toggle="right" class="button button-icon icon ion-navicon"></button>
   </ion-nav-buttons>
     <ion-content padding="true" class="has-header">
@@ -21,7 +22,7 @@
             <label class="item item-input item-select">
 			  <span class="input-label">Service Type</span>
 			     <select ng-model="requestInput.serviceRequestService" id="requestInput.serviceRequestService">
-                     <option value="" selected>Select Your service</option>
+                     <option value="" selected>Select Your Service</option>
                      <option ng-repeat="x in services" value="{{ x.service_name}}">
 		                          {{ x.service_name }}
 		              </option>

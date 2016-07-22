@@ -95,7 +95,7 @@ angular.module('sparkle', ['ionic','sparkle.controllers','sparkle.services'])
       url: "/offerService",
       views: {
         'menuContent' :{
-          templateUrl: "templates/Services.html",
+          templateUrl: "templates/services.html",
           controller: 'ServicesCtrl'
         }
       }
