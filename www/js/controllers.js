@@ -268,11 +268,7 @@ angular.module('sparkle.controllers',[])
     $scope.showVideo = function(id) 
     {
         // Setting Defult Values for the Src and Desc of Video 
-        $scope.clipSrc = "https://www.youtube.com/embed/LHaGDT6Pdbk";
-
-        $scope.clipDes = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.";
-
-
+        
         //console.log(id);
         // Show Only Video Which is CLicked
         for(var i=0; i<$scope.videos.length; i++)
@@ -281,10 +277,7 @@ angular.module('sparkle.controllers',[])
                 {
                     console.log("found");
                     $scope.clipSrc = $scope.videos[i].link;
-                    if($scope.videos[i].description!=null)
-                    if($scope.videos[i].description){
-                        $scope.clipDes = $scope.videos[i].description;
-                    }
+                    
                     
                     break;
 
