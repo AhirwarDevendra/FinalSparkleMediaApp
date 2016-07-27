@@ -118,7 +118,7 @@ angular.module('sparkle.controllers',[])
         $ionicLoading.hide();
         $ionicPopup.alert({
                       title: 'Sorry',
-                      content: 'Bad Request Try Again Latern'
+                      content: 'Bad Request Try Again Later'
                     }).then(function(res) {
                       ionic.Platform.exitApp();
                     });
@@ -403,7 +403,7 @@ angular.module('sparkle.controllers',[])
         $ionicLoading.hide();
         $ionicPopup.alert({
                       title: 'Sorry',
-                      content: 'Bad Request Try Again Latern'
+                      content: 'Bad Request Try Again Later'
                     }).then(function(res) {
                       ionic.Platform.exitApp();
                     });
@@ -505,7 +505,7 @@ angular.module('sparkle.controllers',[])
         $ionicLoading.hide();
         $ionicPopup.alert({
                       title: 'Sorry',
-                      content: 'Bad Request Try Again Latern'
+                      content: 'Bad Request Try Again Later'
                     }).then(function(res) {
                       ionic.Platform.exitApp();
                     });
