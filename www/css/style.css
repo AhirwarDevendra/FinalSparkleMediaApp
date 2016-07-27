@@ -119,7 +119,8 @@ background-color:  #FF007F !important;
 div.app-about
 {
     text-align:center;
-    margin:130px 20px;
+    /*margin:130px 20px;*/
+    margin: 0px 20px;
     color:#000;
 }
 
@@ -140,8 +141,9 @@ img.app-about
 
 p.app-about
 {
-    text-align: justify;
+    text-align:inherit;
     margin: 20px;
+    font-size: 18px;
 }
 
 a.app-about
