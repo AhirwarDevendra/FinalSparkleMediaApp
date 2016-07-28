@@ -32,7 +32,7 @@ angular.module('sparkle.services',[])
 .service('EventImageService',['$http','$log',function($http,$log)
 {
     
-    var images = [
+    /*var images = [
         {
             id:0,
             src:"http://dreamwood.in/images/team/shaikh.jpg"
@@ -62,16 +62,29 @@ angular.module('sparkle.services',[])
             src:"http://dreamwood.in/images/team/priti.jpg"
         }
        
-    ];
-    
+    ];*/
+    var images;
     return {
-    all: function() {
+    all: function($EventID) {
+     $http.get("http://podargroup.com/SparkleMedia/getDataFromServer.php?getType=GetImages&eventID="+$EventID).then(function(result){
+       images = result.data;
+       console.log(images[0].src);
+     });
+      
+      
+      return $http.get("http://podargroup.com/SparkleMedia/getDataFromServer.php?getType=GetImages&eventID="+$EventID);
+      
       return images;
     },
-    get: function(eventId) {
+    get: function(imageId) {
+      
+      console.log(images);
+      
       for (var i = 0; i < images.length; i++) {
-        if (images[i].id === parseInt(eventId)) {
-          return images[i];
+        if (images[i].id == imageId) {
+          
+          console.log(imageId);
+          return images[i].src;
         }
       }
       return null;

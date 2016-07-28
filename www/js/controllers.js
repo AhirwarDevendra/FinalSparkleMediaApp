@@ -214,15 +214,29 @@ angular.module('sparkle.controllers',[])
     });
     
     
-    $scope.images = EventImageService.all();
+    /*$scope.images = EventImageService.all();
     
     if($scope.images.length < 1)
     {
         $scope.NoDataFoundImage = true;
         //$ionicLoading.hide();
 
-    }
+    }*/
     
+    EventImageService.all(EventID).then(function(result){
+        $scope.images = result.data;
+        
+        console.log($scope.images);
+        //To Check Result is there Or Not 
+        if($scope.images.length < 1)
+        {
+            $scope.NoDataFoundImage = true;
+        }
+          
+    });
+  
+    //con
+  
     /*
         Popup a Modal to Show Image and Video on Transparent 
     */
@@ -260,7 +274,8 @@ angular.module('sparkle.controllers',[])
     // Show Individual Image On CLick of ig
     $scope.showImages = function(id)
     {
-        $scope.OpenImage = EventImageService.get(id).src;
+        //.log(EventImageService.get(id));
+        $scope.OpenImage = EventImageService.get(id);
         $scope.showModal('templates/image-popover.html');
     }
     
