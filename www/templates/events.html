@@ -12,8 +12,8 @@
                 <ion-content>
                     
                     <div ng-show="NoDataFoundVideo" id="no-data">
-                        <center><i class="icon ion-heart-broken"></i>
-                        <h3 class="app-events">Sorry <br>Your Wish is Not Completed</h3></center>
+                        <center><i class="icon ion-android-sad"></i>
+                        <h3 class="app-events">Sorry<br>We Could Not Complete Your Wish<br></h3></center>
                     </div>
                     <ion-list>
                         <ion-item class="item item-thumbnail-left item-icon-right video-item" ng-repeat="video in videos" ng-click="showVideo({{video.id}})">
@@ -33,8 +33,8 @@
         <ion-view>
             <ion-content ng-init="loadImages()">
                 <div ng-show="NoDataFoundImage" id="no-data">
-                        <center><i class="icon ion-heart-broken"></i>
-                        <h3>Sorry <br>Your Wish is Not Completed</h3></center>
+                        <center><i class="icon ion-android-sad"></i>
+                        <h3 class="app-events">Sorry<br>We Could Not Complete Your Wish<br></h3></center>
                     </div>
                 <div class="row" style="flex-wrap: wrap">
                                     

@@ -68,7 +68,7 @@ angular.module('sparkle.services',[])
     all: function($EventID) {
      $http.get("http://podargroup.com/SparkleMedia/getDataFromServer.php?getType=GetImages&eventID="+$EventID).then(function(result){
        images = result.data;
-       console.log(images[0].src);
+       //console.log(images[0].src);
      });
       
       

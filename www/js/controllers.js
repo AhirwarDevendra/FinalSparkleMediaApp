@@ -61,10 +61,9 @@ angular.module('sparkle.controllers',[])
         $ionicActionSheet.show({
       titleText: 'Share App With Friends',
       buttons: [
-        { text: '<i class="icon ion-social-whatsapp"></i> Whatsapp' },
-        { text: '<i class="icon ion-social-googleplus"></i> Gmail' },
-        { text: '<i class="icon ion-email"></i> Message' },
         { text: '<i class="icon ion-social-facebook"></i> Facebook' },
+        { text: '<i class="icon ion-social-twitter"></i> Twitter' },
+        { text: '<i class="icon ion-social-googleplus"></i> Gmail' },
       ],
       cancelText: 'Cancel',
       cancel: function() {
@@ -72,6 +71,20 @@ angular.module('sparkle.controllers',[])
       },
       buttonClicked: function(index) {
         console.log('BUTTON CLICKED', index);
+        var win
+        if(index==0)
+        {            
+            win = window.open("http://www.facebook.com/sharer/sharer.php?u=http://dreamwood.in/SparkleMedia/download/", '_blank');          
+        }
+        else if(index==1)
+        {            
+            win = window.open("https://twitter.com/share?text=http://dreamwood.in/SparkleMedia/download/", '_blank');          
+        }
+        else if(index==2)
+        {            
+            win = window.open("https://plus.google.com/share?url=http://dreamwood.in/SparkleMedia/download/", '_blank');          
+        }
+        win.focus();
         return true;
       },
       destructiveButtonClicked: function() {
@@ -79,8 +92,7 @@ angular.module('sparkle.controllers',[])
         return true;
       }
     });
-        
-        //$cordovaSocialSharing.share("Message","Message",null,"MessageSS");
+      
     };
 }])
 
@@ -140,16 +152,16 @@ angular.module('sparkle.controllers',[])
         {
             "id":"1",
             "title":"Like Our Facebook Page",
-            "link":"Follow Us on Twitter",
+            "link":"https://www.facebook.com/sparklemediaandentertainment",
             "icon":"icon ion-social-facebook",
             "color":"#3b5998"
         },
         {
             "id":"2",
-            "title":"Follow Us on Twitter",
+            "title":"Follow Us on Instgram",
             "link":"Follow Us on Twitter",
-            "icon":"icon ion-social-twitter",
-            "color":"#00aced"
+            "icon":"icon ion-social-instagram-outline",
+            "color":""
         },
         {
             "id":"3",
