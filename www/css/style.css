@@ -90,7 +90,7 @@ background-color:  #FF007F !important;
 
 .chat-item
 {
-    border-bottom: solid 1px #DE5285;
+    border-bottom: solid 2px #DE5285;
 }
  
 .chat-item.ng-enter {
@@ -163,7 +163,7 @@ p.app-about.dreamwood
 
 .video-item
 {
-    border-bottom: solid 1px #DE5285;
+    border-bottom: solid 2px #DE5285;
 }
 
 .image-list-thumb
