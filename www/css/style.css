@@ -185,6 +185,12 @@ p.app-about.dreamwood
   animation-duration:0;
 }
 
+
+.icon.ion-play
+{
+    color:#DE5285;
+}
+
 .icon.ion-play:hover
 {
     color:#ffa4f2;
