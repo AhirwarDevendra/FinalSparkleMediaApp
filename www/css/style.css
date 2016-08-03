@@ -4,7 +4,7 @@
 
 ion-view.app-splash
 {
-    background-color:#FF007F;
+    background-color:#F06464;
 }
 
 div.app-splash
@@ -35,11 +35,11 @@ p.app-splash
 
 .bar
 {
-    background-color: #FF007F;
+    background-color: #F0645D;
 }
 
 .tabs-positive > .tabs{
-background-color:  #FF007F !important;
+background-color:  #F0645D !important;
 }
 .title , .ion-navicon , .ion-chevron-left , .button-icon
 {
@@ -66,11 +66,11 @@ background-color:  #FF007F !important;
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    background: rgba(243,0,108,0.8); 
+    background: rgba(240,100,93,0.8); 
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
 ::-webkit-scrollbar-thumb:window-inactive {
-	background: rgba(255,0,128,0.4); 
+	background: rgba(240,100,93,0.4); 
 } 
 
 
@@ -82,7 +82,7 @@ background-color:  #FF007F !important;
 
 .app-menu
 {
-    color: #DE5285;
+    color: #F0645D;
 }
 
 
@@ -90,7 +90,7 @@ background-color:  #FF007F !important;
 
 .chat-item
 {
-    border-bottom: solid 2px #DE5285;
+    border-bottom: solid 2px #DE5D5D;
 }
  
 .chat-item.ng-enter {
@@ -163,12 +163,12 @@ p.app-about.dreamwood
 
 .video-item
 {
-    border-bottom: solid 2px #DE5285;
+    border-bottom: solid 2px #DE5D5D;
 }
 
 .image-list-thumb
 {
-    border: solid 1px #DE5285;
+    border: solid 1px #DE5D5D;
 }
 .video-item.ng-enter{
     -webkit-animation: fadeInLeft 1s;
@@ -188,12 +188,12 @@ p.app-about.dreamwood
 
 .icon.ion-play
 {
-    color:#DE5285;
+    color:#F06464;
 }
 
 .icon.ion-play:hover
 {
-    color:#ffa4f2;
+    color:#F26D7D;
 }
 
 .imgGallery
@@ -204,7 +204,7 @@ p.app-about.dreamwood
 
 .icon.ion-chevron-right
 {
-    color:#E75480
+    color:#F0645D
 }
 
 #no-data
@@ -224,7 +224,7 @@ h3.app-events
 
 .ion-heart-broken, .ion-android-sad
 {
-    color: #FF007F;
+    color: #F0645D;
     font-size: 800%;
     
 }
@@ -339,7 +339,7 @@ h5.title-des
 .button-full
 {
     
-    background-color: #FF007F;
+    background-color: #F0645D;
     color: #fff;
 }
 .button-full:hover
