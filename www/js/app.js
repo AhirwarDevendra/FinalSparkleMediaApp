@@ -115,6 +115,6 @@ angular.module('sparkle', ['ionic','sparkle.controllers','sparkle.services'])
   $urlRouterProvider.otherwise('/splash');
     
     //Defining Title of App Center
-    $ionicConfigProvider.navBar.alignTitle('center');
+    //$ionicConfigProvider.navBar.alignTitle('center');
 
 })

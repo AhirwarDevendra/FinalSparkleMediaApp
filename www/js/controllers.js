@@ -63,7 +63,7 @@ angular.module('sparkle.controllers',[])
       buttons: [
         { text: '<i class="icon ion-social-facebook"></i> Facebook' },
         { text: '<i class="icon ion-social-twitter"></i> Twitter' },
-        { text: '<i class="icon ion-social-googleplus"></i> Gmail' },
+        { text: '<i class="icon ion-social-googleplus"></i> Google+' },
       ],
       cancelText: 'Cancel',
       cancel: function() {
