@@ -4,7 +4,7 @@
 
 ion-view.app-splash
 {
-    background-color:#F06464;
+    background-color:#FF007F;
 }
 
 div.app-splash
@@ -35,11 +35,11 @@ p.app-splash
 
 .bar
 {
-    background-color: #F0645D;
+    background-color: #FF007F;
 }
 
 .tabs-positive > .tabs{
-background-color:  #F0645D !important;
+background-color:  #FF007F !important;
 }
 .title , .ion-navicon , .ion-chevron-left , .button-icon
 {
@@ -66,11 +66,11 @@ background-color:  #F0645D !important;
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    background: rgba(240,100,93,0.8); 
+    background: rgba(243,0,108,0.8); 
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
 ::-webkit-scrollbar-thumb:window-inactive {
-	background: rgba(240,100,93,0.4); 
+	background: rgba(255,0,128,0.4); 
 } 
 
 
@@ -82,7 +82,7 @@ background-color:  #F0645D !important;
 
 .app-menu
 {
-    color: #F0645D;
+    color: #DE5285;
 }
 
 
@@ -90,7 +90,7 @@ background-color:  #F0645D !important;
 
 .chat-item
 {
-    border-bottom: solid 2px #DE5D5D;
+    border-bottom: solid 2px #DE5285;
 }
  
 .chat-item.ng-enter {
@@ -224,7 +224,7 @@ h3.app-events
 
 .ion-heart-broken, .ion-android-sad
 {
-    color: #F0645D;
+    color: #FF007F;
     font-size: 800%;
     
 }
@@ -339,7 +339,7 @@ h5.title-des
 .button-full
 {
     
-    background-color: #F0645D;
+    background-color: #FF007F;
     color: #fff;
 }
 .button-full:hover
